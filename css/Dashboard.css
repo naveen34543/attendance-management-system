@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: function changeBackground();
+}
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url('image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 15s infinite ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+}
+@keyframes change{
+    0%
+    {
+        background-image: url('img/image\(1\).jpg');
+    }
+    20%
+    {
+        background-image: url('img/image\(2\).jpg');
+    }
+    40%
+    {
+        background-image: url('img/image\(3\).jpg');
+    }
+    60%
+    {
+        background-image: url('img/image\(4\).jpg');
+    }
+    80%
+    {
+        background-image: url('img/image\(5\).jpg');
+    }
+    90%
+    {
+        background-image: url('img/image_11.jpeg');
+    }
+    100%
+    {
+        background-image: url('img/image_111.jpeg');
+    }
+}
+form {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 2px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    
+}
+button {
+    font-size: large;
+    width: 50%;
+    margin-bottom: 4%;
+    margin: 3% auto;
+    background: transparent;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.custom-buttonone {
+    padding: 10px 54px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color:  #0a75bd;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.custom-buttontwo {
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color:  #0a75bd;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.custom-buttonthree {
+    padding: 10px 53.5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color:  #0a75bd;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.custom-buttonfour {
+    padding: 10px 54px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color:  #0a75bd;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.custom-buttonfive {
+    padding: 10px 23px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color:  #0a75bd;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.custom-buttonsix {
+    padding: 10px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0a75bd;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.custom-buttonoff{
+    padding: 10px 45px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(240, 39, 39);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}

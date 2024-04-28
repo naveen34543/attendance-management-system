@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+    background: url('img/image\(2\).jpg');
+}
+h1{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 2px;
+
+}
+form {
+    width: 84rem;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border-radius: 5px;
+    padding: 17px;
+    opacity: .9;
+    border: 1px solid black;
+}
+label{
+    font-size: 19px;
+    font-weight: bolder;
+    color: black;
+}
+input[type="text"],
+input[type="number"] {
+    width: 8%;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #746767;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+#reg{
+    width: 13%;
+    padding: 6px;
+    font-size: 15px;
+    border: 1px solid #746767;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+input[type="text"]:focus {
+    border-color: #4CAF50; 
+}
+select {
+    padding: 6px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%);
+    pointer-events: none;
+}
+option {
+    background-color: #fff;
+    color: #333;
+}
+option:hover {
+    background-color: #f0f0f0;
+}
+#searchbar{
+    border-radius: 6px;
+    word-spacing: 10px;
+}
+input[type="submit"]{
+    width: 10%;
+    color: white;
+    font-size: 17px;
+    background: black;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.buttonoff{
+color: white;
+font-size: 16px;
+opacity: 15;
+background: black;
+padding: 10px 16px;
+border: none;
+outline: none;
+border-radius: 4px;
+font-weight: bold;
+cursor: pointer;
+text-decoration: none;
+}
+table{
+    font-size: 17px;
+    color: #050505;
+    border: 1px solid #050505;
+}
+  th, td {
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+  }
+  th{
+    background-color: rgb(125, 143, 160);
+    color: black;
+  }
+  tr:nth-child(even) {
+    background-color: #bbe7e7;
+  }
+#formtwo {
+    width: 84rem;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 5px;
+    padding: 7px;
+    transform: tranlate(-50%,50%);
+    opacity: .9;
+}
+#nocolour {
+    background-color: transparent;
+    letter-spacing: normal;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(92, 26, 2);
+}
+
+#lock{ display:none; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) { #lock{ display:block; }
+
+#container{ display:none; }
+
+} @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) { #lock{ display:none; }
+
+#container{ display:block; }
+
+}
